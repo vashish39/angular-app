@@ -1,0 +1,26 @@
+
+<div id="body" class="dark">
+<div class="displayOps"  >	
+    <h4>{{title | uppercase}}</h4>
+        <input type="checkbox" id="edit" [(ngModel)]="checked" name="edit" (click)="editOps()"><label for="edit">{{labels}}</label>
+        <ul>
+        <li *ngFor="let operator of op" (click)="onSelect(operator)" [class.selected]="operator === selectedHero">            
+            <a style="display: block; text-decoration: none;">
+            <div>
+            <mat-card id="opfield">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"><img [src]="operator.icon"/></div>
+                    <mat-card-title style="font-family: 'Roboto'; color: #dddbdb; font-weight: bold;">{{operator.name}}</mat-card-title>
+                    <mat-card-subtitle style="margin-bottom: 0px; color: #919191; font-family: 'Roboto', cursive;">{{operator.team}}</mat-card-subtitle>                   
+                </mat-card-header>                
+                <button *ngIf="checked" (click)="remove(operator)" id="remove">x</button>
+            </mat-card>
+            </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+
+<button routerLink="/add" id="addop" mat-fab>+</button>
+<app-details [op]="selectedHero"></app-details>

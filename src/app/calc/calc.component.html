@@ -1,0 +1,25 @@
+<div class="calculator">
+
+    <h2>
+        Calculator Component
+    </h2>	
+
+    <mat-form-field class="inputs">
+        <input matInput [(ngModel)]="number1" type="number" name="" placeholder="Number 1">    
+    </mat-form-field>
+    <mat-form-field class="inputs">    
+        <input matInput [(ngModel)]="number2" type="number" name="" placeholder="Number 2">
+    </mat-form-field>
+
+    <button (click)="add()" class="button">+</button>
+    <button (click)="sub()" class="button">-</button>
+    <button (click)="multi()" class="button">x</button>
+    <button (click)="divide()" class="button">/</button>
+
+</div>
+
+<div class="result" *ngIf="test">
+    <span>
+        <b>{{result}}</b>
+    </span>
+</div>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto');
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+  color: #444;
+  font-family: 'Roboto', cursive;
+  font-size: 1.2em;
+  margin: 0px ;
+  font-weight: bold;
+}
+
+h6{
+    opacity: 1;
+    margin: 5px 0 10px 0;
+    color: rgb(164, 99, 243);
+}
+
+.details{
+    opacity: 1;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid #673AB7;
+    background: #3A3A3C;  
+    font-family: 'Roboto', cursive;
+    font-size: 1.2em;
+}
+
+.details span{
+    display: block;
+}
+.details p{
+    display: block;
+    margin: 10px;
+    color: #f0efef;
+}
+
+.details input{
+    background: #efefef;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #dad6d6;
+    padding: 5px 0 0px 0;
+    margin: auto;
+    font-family: 'Roboto', cursive;
+    font-size: 1em;
+    text-align: center;
+}
+
+img{
+    width: 75px;
+}
+
+label{
+    opacity: .4;
+    font-size: .9em;
+}
+
+#remove{
+    opacity: 1;
+    float: right;
+    margin: 0 auto;
+    padding: 5px;
+    color: #747475;
+    background-color: #1D1D1D;
+    border-radius: 50%;
+    border: none;
+    height: 25px;
+    width: 25px;
+    box-shadow: 1px 2px 10px #1D1D1D;
+}
+
+#remove:hover{
+    background-color: #ff3d3d;
+    box-shadow: 1px 2px 10px #ff3d3d;
+    color: white;
+}

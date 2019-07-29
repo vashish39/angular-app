@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto');
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+.calculator {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid #ff6666;
+    margin: auto;
+    background: #f9f9f9;
+}
+
+
+
+.calculator h2{
+    font-family: Roboto;
+}
+.button {
+    opacity: .8;
+    border-radius: 50%;
+    background-color: #CFD8DC; /* Green */
+    border: none;
+    color:  grey;
+    padding: 15px 21px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #68c16b; /* Green */
+    /* background-color: #adeaaf; Green */
+    opacity: 1;
+    color: white;
+    transition-duration: 200ms;
+    box-shadow: 1px 1px 10px #68C16B;
+}
+
+.inputs{
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+.result{
+    padding: 10px;
+    border-top: 5px solid #68c16b;
+    background: #f9f9f9;
+	width: 50%;
+	margin: 20px auto;
+    height: 75px;
+    font-family: Roboto;
+    text-align: center;
+	/* border-left: 3px solid #2196F3; */
+}
+
+.result span{
+    line-height: 75px;;
+    margin: 10px auto;
+    font-size: 1.5em;
+    opacity: .5;
+}
+
+#back{
+    border: 0px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 20px auto;
+    display: block;
+    background-color: #eee;
+    border-radius: 4px;  
+    font-family: 'Roboto', cursive;
+}
+
+#back:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Roboto');
+
+h4 {
+  color: #444;
+  font-family: 'Lilita One', cursive;
+  font-size: 1.5em;
+  margin: 5px 0 20px 0;
+  font-weight: lighter;
+}
+nav{
+    text-align: center;
+    color: #9fa0a5;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  background-color: #3A3A3C;
+  border-radius: 4px;  
+  font-family: 'Roboto', cursive;
+  
+}
+nav a:visited, a:link {
+  color: #9fa0a5;
+}
+nav a:hover {
+  color: #C1C3CA;
+  background-color: #606060;
+}
+nav a.active {
+  color: #C1C3CA;
+}
+
+div.dark {
+    background-color: #1D1D1D;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+div.light {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}

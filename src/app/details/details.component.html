@@ -1,0 +1,12 @@
+<div class="details" *ngIf="op && checked" >
+    <button (click)="remove()" id="remove">x</button>
+    <img [src]="op.icon"/>
+    <input [(ngModel)]="op.name" placeholder="name"/>
+    <h6>{{op.side | uppercase}}</h6>
+    <mat-divider></mat-divider>
+    <div>
+        <p class="detail"> <label>Name: </label> {{op.name}}</p>
+        <p class="detail"> <label>Gadget: </label> {{op.gadget}}</p>
+        <p class="detail"> <label>Team: </label> {{op.team}}</p>
+    </div>
+</div>

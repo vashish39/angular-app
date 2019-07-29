@@ -1,0 +1,10 @@
+<div id="body" class="mat-typography app-frame mat-app-background">
+	<nav>
+	  <a routerLink="/dashboard">Dashboard</a>
+	  <a routerLink="/calc">Calculator</a>
+	  <button type="button" name="dark_light" (click)="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+	</nav>
+	<router-outlet #o="outlet"></router-outlet>
+</div>
+
+
